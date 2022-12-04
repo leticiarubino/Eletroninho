@@ -1,0 +1,275 @@
+
+:root{
+	--background: #121214;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@media(max-white: 1080px){
+  html{
+      font-size: 93.75%;
+  }
+
+
+}
+
+
+@media (max-width: 768px){
+  html{
+      font-size: 87.5%;
+  }
+	#vantagensEletroninhoContainer #vantagensEletroninhoItem{
+		margin: 2rem 0;
+		display: grid;
+		gap: 2rem;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 1rem;
+		
+	}
+
+	body #quemSomos{
+		display: grid;
+		padding: 1rem;
+	}
+
+	body #quemSomos img{
+		width: 100%;
+		border-radius: 4px;
+		padding: 1rem;
+	}
+	
+	body footer #contato{
+		display: grid;
+		text-align: center;
+		justify-content: space-between;
+		padding: 2rem;
+		box-shadow: 0 0 2px 0 #ffff;
+	}
+	#conteiner {
+		display: grid;
+		padding: 1rem;
+	}
+}
+body{
+	width: 100%;
+	font-family: 'Roboto';
+	background-color: var(--background);
+	color: #FFFFFF;
+}
+#container{
+	margin: 0 auto;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 1rem;
+	margin-left:5% ;
+}
+nav #links {
+	display: flex;
+	gap: 2rem;
+}
+nav img{
+	width: 180px;
+}
+nav a{
+	text-decoration: none;
+	color: #FFFF;	
+	font-size: 14px;
+}
+
+#vantagensEletroninhoItem{
+	margin: 2rem 0;
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 2rem;
+	
+}
+
+
+#vantagensEletroninhoItem .item img{
+	width: 5rem;
+}
+
+#vantagensEletroninhoItem .item h2{
+	font-size: 1.25rem;
+	line-height: 1.4;
+	margin: 0.65rem 0;
+}
+
+#vantagensEletroninhoContainer::after{
+	content: '';
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	height: 1px;
+	background-color: rgba(255, 255, 255, 0.2);
+
+	
+}
+
+#quemSomos{
+	margin-top: 3rem;
+	display: flex;
+	align-items: start;
+	justify-content: start;
+	gap: 2rem;
+	font-size: 1.1rem;
+	padding: 2rem;
+}
+
+#quemSomos img{
+	width: 50%;
+	border-radius: 4px;
+}
+
+#quemSomos .content{
+	padding: 1rem;
+
+}
+#quemSomos .content p{
+	margin-top: 2rem;
+	line-height: 1.6;
+	font-size: 1.1rem;
+}
+
+.title{
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+
+footer #contato{
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	padding: 2rem;
+}
+#maps{
+	max-width: 600px;
+	height: 400px;
+	border-radius: 4px;
+}
+
+#containerContato{
+	
+	padding: 2rem;
+}
+
+#containerContato h3{
+	text-align: center;
+	margin-top:40%;
+}
+
+#containerContato ul{
+	list-style-type: none;
+	margin-top: 2rem;
+}
+#containerContato li a{
+	display: flex;
+	gap: 2rem;
+	color: #fff;
+	text-decoration: none;
+	align-items: center;
+}
+#containerContato li a:hover{
+	filter: brightness(0.8)
+}
+#containerContato li + li{
+	margin-top: 1rem;
+}
+footer #autor{
+	text-align: center;
+	padding: 2rem;
+}
+
+
+#slider {
+	overflow: hidden; 
+	margin-bottom: 2rem;
+}
+#slider figure {position: relative;width: 625%;margin: 0;left: 0;animation: 20s slider infinite;}
+#slider figure img {width: 16%;float: left;}
+
+@keyframes slider {
+	0% {left: 0;}
+	20% {left: 0;}
+	25% {left: -100%;}
+	45% {left: -100%;}
+	50% {left: -200%;}
+	70% {left: -200%;}
+	75% {left: -300%;}
+	95% {left: -300%;}
+	100%{left: -400%;}
+}
+
+/* --- Formulario */
+.content{
+    display:flex;
+    justify-content:center;
+	padding: 3rem;
+}
+    .contato{
+        width: 400px ;
+    }
+    .form{
+        display: flex; 
+        flex-direction: column;
+    }
+    .field{
+        padding: 10px;
+        margin-bottom: 15px; 
+        border: 1px solid #828282; 
+        border-radius: 8px; 
+        font-family: Roboto, Helvetica, sans-serif; 
+        font-size: 16px;
+    }
+    .field2{
+        padding: 10px; 
+        margin-bottom: 15px; 
+        border: 1px solid #d61818d6; 
+        border-radius: 8px; 
+        color:white; 
+        font-family: Roboto, Helvetica, sans-serif; 
+        font-size: 16px; background-color:#d61818d6;
+    }
+
+    textarea{
+        height: 150px; 
+        min-width: 400px; 
+        max-width:400px;
+
+    }
+
+	#for {
+		font-size: 1.5rem;
+		text-align: center;
+		margin-top: 8%;
+	}
+
+	#form::after{
+		content: '';
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+		height: 1px;
+		background-color: rgba(255, 255, 255, 0.2);
+	
+		
+	}
+
+	/* ------ FIM DO FORMULARIO CONTATO ---- */
+
+	

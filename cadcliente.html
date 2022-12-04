@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Cadastro de Clientes - Eletroninho </title>
+		
+		<style>
+
+        body {
+                background: linear-gradient(#8FE3CF, #256D85, #2B4865, #002B5B);
+                background-size: cover;
+                width:100%;
+                align-items: baseline;
+                justify-content: center;
+                padding: 10px;
+                min-height: 100vh;
+                margin:0;
+            }
+			
+			#formulario{
+				text-align: left;
+				margin: 0;
+				font-family: Tahoma;
+
+			}
+			
+			.direita{
+				float: right;
+				width: 50%;
+			}
+			
+			.esquerda{
+				float: left;
+				width: 50%;
+			}
+			
+			#formulario label{
+				line-height:30px;
+				text-align: left;
+				color: #363636;
+			}
+			
+			#formulario input{
+				padding: 9px;
+				border: 1px solid #CCCCCC;
+				background: #E8EFE4;
+				border-radius: 4px;
+				color: #363636;
+			}
+			
+		
+			
+			
+			
+		</style>
+		
+		
+	</head>
+	
+	<body>
+		<center><h1> Cadastro de Clientes </h1></center>
+		<hr>
+		
+		<div id="formulario">
+			
+			<form action="salvarcliente.php" method = "post">
+			
+
+				
+				<div class="esquerda">
+					<label for="nome_completo"> Nome Completo: </label><br>
+					<input type="text" name="Nome" size="35" placeholder="Nome Completo">
+				</div>
+				
+				<div class="esquerda">
+					<label for="rg"> RG: </label><br>
+					<input type="text" name="RG" size="35" placeholder="00.000.000-0">
+				</div>
+				
+				<div class="direita">
+					<label for="cpf"> CPF: </label><br>
+					<input type="text" name="CPF" size="35" placeholder="000.000.000-00">
+				</div>
+				
+				<div class="esquerda">
+					<label for="nome_pai"> Pai: </label><br>
+					<input type="text" name="Pai" size="35" placeholder="Nome do pai">
+				</div>
+				
+				<div class="direita">
+					<label for="mae"> Mãe: </label><br>
+					<input type="text" name="Mãe" size="35" placeholder="Nome da mãe">
+				</div>
+				
+				<div class="esquerda">
+					<label for="email"> E-mail: </label><br>
+					<input type="text" name="Email" size="35" placeholder="exemplo@email.com">
+				</div>
+				
+				<div class="direita">
+					<label for="telefone"> Telefone: </label><br>
+					<input type="text" name="Telefone" size="35" placeholder="(00)00000-0000">
+				</div>
+				
+				<br>
+				
+				<input type="submit" value = "Cadastrar" class="botao" style="margin-top: 20px">
+				<input type="reset" value = "Limpar" class="botao">
+				
+				
+				
+			</form>
+			
+		</div>
+	
+	</body>
+</html>

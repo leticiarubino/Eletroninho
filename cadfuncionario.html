@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Cadastro de Funcionarios - Eletroninho </title>
+		
+		<style>
+
+        body {
+                background: linear-gradient(#8FE3CF, #256D85, #2B4865, #002B5B);
+                background-size: cover;
+                width:100%;
+                align-items: baseline;
+                justify-content: center;
+                padding: 10px;
+                min-height: 100vh;
+                margin:0;
+            }
+			
+			#formulario{
+				text-align: left;
+				margin: 0;
+				font-family: Tahoma;
+			}
+			
+			.direita{
+				float: right;
+				width: 50%;
+			}
+			
+			.esquerda{
+				float: left;
+				width: 50%;
+			}
+			
+			#formulario label{
+				line-height:30px;
+				text-align: left;
+				color: #363636;
+			}
+			
+			#formulario input{
+				padding: 9px;
+				border: 1px solid #CCCCCC;
+				background: #E8EFE4;
+				border-radius: 4px;
+				color: #363636;
+			}
+			
+			#formulario .botao{
+				background-color: #45543D;
+				color: #FFF;
+			}
+			
+			#formulario .botao:hover{
+				background-color: #354030;
+			}
+			
+			
+			
+			
+		</style>
+		
+		
+	</head>
+	
+	<body>
+		<center><h1> Cadastro de Funcionarios </h1></center>
+		<hr>
+		
+		<div id="formulario">
+			
+			<form action="salvarfunc.php" method = "post">
+			
+				<div class="data direita">
+					<label for="Nascimento"> Data de Nascimento: </label><br>
+					<input type="text" name="Nascimento" size="25" placeholder="__/__/__">
+				</div>
+				
+				<div class="esquerda">
+					<label for="Nome"> Nome Completo: </label><br>
+					<input type="text" name="Nome" size="35" placeholder="Nome Completo">
+				</div>
+				
+				<div class="esquerda">
+					<label for="RG"> RG: </label><br>
+					<input type="text" name="RG" size="35" placeholder="00.000.000-0">
+				</div>
+				
+				<div class="direita">
+					<label for="CPF"> CPF: </label><br>
+					<input type="text" name="CPF" size="35" placeholder="000.000.000-00">
+				</div>
+				
+				<div class="esquerda">
+					<label for="Pai"> Pai: </label><br>
+					<input type="text" name="Pai" size="35" placeholder="Nome do pai">
+				</div>
+				
+				<div class="direita">
+					<label for="Mãe"> Mãe: </label><br>
+					<input type="text" name="Mãe" size="35" placeholder="Nome da mãe">
+				</div>
+				
+				<div class="esquerda">
+					<label for="email"> E-mail: </label><br>
+					<input type="text" name="Email" size="35" placeholder="exemplo@email.com">
+				</div>
+				
+				<div class="direita">
+					<label for="telefone"> Telefone: </label><br>
+					<input type="text" name="Telefone" size="35" placeholder="(00)00000-0000">
+				</div>
+				
+				<br>
+				
+				<input type="submit" value = "Cadastrar" class="botao" style="margin-top: 20px">
+				<input type="reset" value = "Limpar" class="botao">
+				
+				
+				
+			</form>
+			
+		</div>
+	
+	</body>
+</html>

@@ -1,0 +1,241 @@
+<html>
+<head> <title>Eletroninho - Serviços</title>
+
+<link rel="stylesheet" href="STYLE.CSS" type="text/css" />
+<meta charset="utf-8">
+<link rel="icon" type="imagem/png" href="img/logocortada.png" width="50px" height="50px" />
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+/*Slider*/
+#slider {overflow: hidden;}
+#slider figure {position: relative;width: 625%;margin: 0;left: 0;animation: 20s slider infinite;}
+#slider figure img {width: 16%;float: left;}
+
+@keyframes slider {
+	0% {left: 0;}
+	20% {left: 0;}
+	25% {left: -100%;}
+	45% {left: -100%;}
+	50% {left: -200%;}
+	70% {left: -200%;}
+	75% {left: -300%;}
+	95% {left: -300%;}
+	100%{left: -400%;}
+}
+
+@media (max-width: 768px){
+
+	#conteiner{
+		display:grid;
+		padding:1rem;
+	}
+
+	footer #contato{
+		display: grid;
+		text-align: center;
+		justify-content: space-between;
+		padding: 2rem;
+		box-shadow: 0 0 2px 0 #ffff;
+	}
+
+}
+
+.title4{ width: 450px;
+	margin: 0 auto;}
+
+	.conteiner {
+        display:flex;
+        justify-content:space-evenly;
+		margin-left: -0%;
+
+    }
+
+    .card {
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    margin-top:100px;
+    background-color: #4e4e4e;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 5px 10px, rgba(177, 9, 9, 0.22) 0px 5px 5px;
+    margin-top:15px;
+    }
+
+    .pr {
+  font-weight: 20;
+  font-family: Mulish;
+  color:#ffffff, solid;
+  text-align: center;
+  margin-top:30px;
+
+
+}
+
+.icone{
+    display:flex;
+    justify-content: center;
+    border-radius: 10px;
+    width: 120px;
+    height: 120px;
+    margin-left:30%;
+    margin-top:11%;
+
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+  color:#dddada;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+
+}
+p{
+text-align: center;
+ font-size: 16px;
+ color:#bebbbb;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ padding:10px;
+
+}
+footer::before{
+		content: '';
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+		height: 1px;
+		background-color: rgba(255, 255, 255, 0.2);
+		margin-top:10%;
+	
+		
+	}
+</style>
+</head>
+
+<body>
+<main id="total">
+	<!-- Menu de navegação -->
+	<header id="topo">
+		<nav id="menu">
+			<div id="logo">
+				<a href="index.html">
+					<img src="Imagem/img-logo.png">
+				</a>
+			</div>
+			<div id="links">
+				<a href="index.html" > HOME </a>
+				<a href="servicos.html" style="color:#ffffff; border-bottom: solid #eb3333 3px;"> SERVIÇOS </a>
+				<a href="contatos.html"> CONTATOS </a>
+			</div>
+		</nav>
+
+	</header>
+	<!-- Fim de Menu -->
+
+
+	<!-- Banners -->
+	<div id="banner">
+		<div id="slider">
+			<figure>
+				<img src="Imagem/projeto-no-conceito-de-placas-de-circuito-eletronico.jpg" width="750" height="580">
+				<img src="Imagem/projeto-no-conceito-de-placas-de-circuito-eletronico.jpg" width="750" height="580">
+				<img src="Imagem/projeto-no-conceito-de-placas-de-circuito-eletronico.jpg" width="750" height="580">
+				<img src="Imagem/projeto-no-conceito-de-placas-de-circuito-eletronico.jpg" width="750" height="580">
+			</figure>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+
+	<!--FIM BANNERS -->
+ 
+
+ 	<!-- Nossos serviços -->
+<div class="conteiner">
+
+<div class="card">
+	<div class="icone">
+		<img src="Icons/1.png">
+				</div>
+				<div class="texto">
+					<br>
+					  	<h2>Assistência Técnica</h2>
+
+				  <p>A Eletroninho está há 15 anos no mercado de conserto de TV LED, conserto de TV OLED, conserto de TV LCD e conserto de TV de plasma de todas as marcas. </p>
+			</div>
+		</div>
+				<div class="card">
+					<div class="icone">
+						<img src="Icons/2.png">
+						</div>
+					<div class="texto">
+						<br>
+						<h2>Mão de Obra Especializada</h2>
+						<br>
+					
+						<p>Temos serviços especiliazados nas mais diversas marcas e aparelhos do mercado. Contamos com peças, capacitação técnica e experiência necessária.</p>
+					</div>
+			    </div>
+		
+					<div class="card">
+					<div class="icone">
+						<img src="Icons/4.png">
+						</div>
+					<div class="texto">
+						<br>
+						<h2>Garantia Total</h2>
+						<br>
+						<p> Todos nossos serviços prestados contam com 90 dias de garantia.</p>
+					</div>
+										
+					</div>
+				</form>
+				</div>
+     		<!-- FIM DOS NOSSOS SERVIÇOS-->
+<!-- RODAPÉ -->
+<footer>
+	<div id="contato">
+		<div id="containerContato">
+			<h3>CONTATOS</h3>
+			<ul>
+				<li>
+					<a href="https://api.whatsapp.com/send?phone=5521987561128&text=Ol%C3%A1%2C%20como%20podemos%20ajudar%3F"
+						target="_blank" color="#1111">
+						<img src="Imagem/whatsapp.2.png" width="25px" height="23px">
+						<span>Tel (21) 98756-1128</span>
+					</a>
+
+				</li>
+				<li>
+					<a href="mailto:eletroninho0213@gmail.com">
+						<img src="Imagem/gmail.1.png" width="25px" height="23px">
+						<span>E-mail: eletroninho0213@gmail.com</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="itemsContato">
+			<iframe id="maps"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.6157153959143!2d-43.295447674970994!3d-22.81669899258767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997b075f1c30db%3A0xbab1d36e5c5e45ee!2sR.%20Estrela%20D%20Oeste%2C%2064%20-%20Cordovil%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2021010-250!5e0!3m2!1sen!2sbr!4v1663636413671!5m2!1sen!2sbr"
+				style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
+	<div id="autor">
+		<p>Desenvolvido por Letícia Rubino. © Copyright 2020; Todos os direitos reservados </p>
+	</div>
+</footer>
+<!-- FIM - RODAPÉ -->
+</main>
+
+<!-- IMPORTANDO O JAVASCRIPT DO ARQUIVO SCRIPT-->
+<script src="./script.js"></script>
+</body>
+
+</html>
